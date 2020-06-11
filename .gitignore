@@ -8,3 +8,4 @@ __pycache__/wide_resnet.cpython-37.pyc
 data/*
 models/*
 images_torch.pt
+*.pyc
