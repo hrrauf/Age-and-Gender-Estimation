@@ -10,7 +10,7 @@
 
         <title>Cover Template for Bootstrap</title>
         <link rel="canonical" href="https://getbootstrap.com/docs/4.0/examples/cover/">
-        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
         
     </head>
 <body>
@@ -30,27 +30,9 @@
               </nav>
             </div>
           </div>
-
-          <div class="inner cover">
-            <h1 class="cover-heading">Age and Gender Prediction Using Deep Learning</h1>
-            <p class="lead">Our idea is to detect faces and predict the age and gender of a person based on the given input.</p>
-            <div class="container">
-              <div class="row">
-                  <div class="col-xs-2">
-                    <p class="lead">
-                      <a href="./vgg_page" class="btn btn-lg btn-secondary">Show VGG Prediction&nbsp;</a>
-                    </p>
-                     Click this to show the results for VGG face model.
-                  </div>
-                  <div class="col-xs-2">
-                    <p class="lead">
-                      <a href="./resnet_page" class="btn btn-lg btn-secondary">Show ResNet Prediction</a>
-                    </p>
-                      Click this to show the results for Wide ResNet model.
-                  </div>
-                </div>
-            </div>
-          </div>
+            
+            <h1 class="cover-heading">VGG Model</h1>
+            <img src="{{ url_for('video_feed_vgg') }}">
 
           <div class="mastfoot">
             <div class="inner">
