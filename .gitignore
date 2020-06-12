@@ -6,6 +6,8 @@ __pycache__/singlemotiondetector.cpython-37.pyc
 __pycache__/camera.cpython-37.pyc
 __pycache__/wide_resnet.cpython-37.pyc
 data/*
-models/*
+pretrained_models/*
 images_torch.pt
 *.pyc
+*.h5
+*.hdf5

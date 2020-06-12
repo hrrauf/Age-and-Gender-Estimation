@@ -5,7 +5,7 @@ import numpy as np
 import argparse
 from contextlib import contextmanager
 from keras.utils.data_utils import get_file
-from wide_resnet import WideResNet
+from models.wide_resnet import WideResNet
 import numpy as np
 import pandas as pd
 from keras.preprocessing import image
@@ -23,7 +23,7 @@ import matplotlib.pyplot as plt
 import torch
 from contextlib import contextmanager
 from keras.preprocessing.image import load_img, img_to_array
-from VGG import gen_vgg_model
+from models.VGG import gen_vgg_model
 graph = tf.get_default_graph()
 
 class ImageClassifier():
@@ -36,16 +36,16 @@ class ImageClassifier():
         
         if modelName=='vgg':
             age_model=gen_vgg_model(101)
-            age_model.load_weights('./models/age_model_weights.h5')
+            age_model.load_weights('./trained_models/age_model_weights.h5')
             gender_model=gen_vgg_model(2)
-            gender_model.load_weights('./models/gender_model_weights.h5')
+            gender_model.load_weights('./trained_models/gender_model_weights.h5')
             self.age_model = age_model
             self.gender_model = gender_model
             self.img_size=224
             
         elif modelName=='wide_resnet':
             model= WideResNet(64, depth=16, k=8)()
-            model.load_weights('./models/weights.28-3.73.hdf5')
+            model.load_weights('./trained_models/weights.28-3.73.hdf5')
             self.img_size=64
             self.model = model
         
