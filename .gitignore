@@ -1,10 +1,6 @@
 
-.ipynb_checkpoints/COGS-225_camera-checkpoint.ipynb
-.ipynb_checkpoints/apparent_age_prediction-checkpoint.ipynb
-.ipynb_checkpoints/Untitled-checkpoint.ipynb
-__pycache__/singlemotiondetector.cpython-37.pyc
-__pycache__/camera.cpython-37.pyc
-__pycache__/wide_resnet.cpython-37.pyc
+.ipynb_checkpoints/*
+__pycache__/*
 data/*
 pretrained_models/*
 images_torch.pt
