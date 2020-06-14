@@ -76,7 +76,7 @@ class VGG_16:
         model.add(Activation('softmax'))
         if self.pretrained==True:
         
-            model.load_weights('./model/vgg_face_weights.h5')
+            model.load_weights('./trained_models/vgg_face_weights.h5')
         
         for layer in model.layers[:-7]:
             layer.trainable = False
